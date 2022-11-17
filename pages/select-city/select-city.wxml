@@ -1,0 +1,20 @@
+<!--pages/select-city/select-city.wxml-->
+<view class="city">
+  <!-- 当前所在城市开始 -->
+  <view class="city-current">
+    <text>当前所在城市</text>
+    <view class="city-current-btn">
+      <button class="city-btn-position" size="mini" bindtap="onLocation">{{ currentCity }}</button>
+    </view>
+  </view>
+  <!-- 当前所在城市结束 -->
+  <!-- 热门城市开始 -->
+  <view class="city-hot">
+    <text>热门城市</text>
+    <view class="city-hot-btn">
+      <button size="mini" wx:for="{{ hotcityList }}" wx:key="index" bindtap="onHotCity" data-cityName="{{ item }}">{{ item }}</button>
+    </view>
+  </view>
+  <!-- 热门城市结束 -->
+  <map longitude="{{ longitude }}" latitude="{{ latitude }}"/>
+</view>

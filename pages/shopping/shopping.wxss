@@ -1,0 +1,97 @@
+/* pages/shopping/shopping.wxss */
+.shopping {
+  padding: 10rpx;
+  background-color: #f3f3f3;
+  position: relative;
+}
+.shopping-item {
+  display: flex;
+  margin: 20rpx 0;
+  background-color: #fff;
+}
+.shopping-left {
+  width: 100%;
+  display: flex;
+  padding: 30rpx 0;
+  padding-right: 50rpx;
+  transform: translateX(200rpx);
+  transition: all .4s;
+  margin-left: -200rpx;
+}
+.shopping-left-click {
+  transform: translateX(0);
+}
+.shopping-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20rpx;
+}
+.shopping-circle view {
+  width: 30rpx;
+  height: 30rpx;
+  border: 1rpx solid black;
+  border-radius: 30rpx;
+}
+.shopping-image image {
+  width: 200rpx;
+  height: 200rpx;
+  margin-right: 10rpx;
+}
+.shopping-desc {
+  display: flex;
+  flex-direction: column;
+}
+.shopping-desc-title {
+  font-weight: 700;
+}
+.shopping-desc-desc {
+  font-size: 28rpx;
+  color: rgba(0, 0, 0, .6);
+  margin: 20rpx 0;
+}
+.shopping-desc-price {
+  display: flex;
+  position: relative;
+}
+.shopping-desc-price-num {
+  color: red;
+}
+.shopping-desc-count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.shopping-desc-count view {
+  border: 1rpx solid black;
+  padding: 0 10rpx;
+  margin: 0 20rpx;
+}
+.shopping-remove {
+  background-color: red;
+  color: #fff;
+  width: 200rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(220rpx);
+  transition: all .4s;
+}
+.shopping-remove-click {
+  transform: translateX(0);
+}
+.shopping-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100rpx;
+  background-color: pink;
+}
+.shopping-bottom-replace {
+  width: 100%;
+  height: 120rpx;
+}

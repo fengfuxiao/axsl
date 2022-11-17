@@ -1,0 +1,26 @@
+<!--pages/search/search.wxml-->
+<view class="search">
+  <!-- 搜索页面搜索框开始 -->
+  <view class="search-input">
+    <input type="text" placeholder="请输入你想搜索的内容" bindinput="onChangeInputValue" />
+    <button bindtap="onSearch">搜索</button>
+  </view>
+  <!-- 搜索页面搜索框结束 -->
+  <!-- 搜索页面展示列表开始 -->
+  <view class="search-list">
+    <view class="diet-shop-item" wx:for="{{ shopList }}" wx:key="index">
+      <view class="diet-shop-item-img">
+        <image src="{{ item.pic }}" mode="aspectFit" />
+      </view>
+      <view class="diet-shop-item-right">
+        <text>{{ item.name }}</text>
+        <text class="shop-item-desc">{{ item.description }}</text>
+        <view class="diet-shop-item-right-bottom">
+          <text>¥{{ item.price }}</text>
+          <text>{{ item.paymentNum }}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 搜索页面展示列表结束 -->
+</view>

@@ -1,0 +1,35 @@
+<!--pages/shopping/shopping.wxml-->
+<view class="shopping">
+  <view class="shopping-item" wx:for="{{ shoplist }}" wx:key="index">
+    <view class="shopping-left {{ item.isRemove ? 'shopping-left-click' : '' }}" bindtap="onRemove" data-id="{{ index }}" bindtouchstart="touchstart" bindtouchmove="touchmove">
+      <view class="shopping-circle">
+        <view></view>
+      </view>
+      <view class="shopping-image">
+        <image src="{{ item.image }}" mode="" />
+      </view>
+      <view class="shopping-desc">
+        <text class="shopping-desc-title">{{ item.name }}</text>
+        <text class="shopping-desc-desc">{{ item.desc }}</text>
+        <view class="shopping-desc-price">
+          <text class="shopping-desc-price-num">¥{{ item.price }}</text>
+          <view class="shopping-desc-count">
+            <view>-</view>
+            <text>1</text>
+            <view>+</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!-- 删除按钮开始 -->
+    <view class="shopping-remove {{ item.isRemove ? 'shopping-remove-click' : '' }}">
+      <text>删除</text>
+    </view>
+    <!-- 删除按钮结束 -->
+  </view>
+  <!-- 撑开fixed定位的view开始 -->
+  <view class="shopping-bottom-replace"></view>
+  <!-- 撑开fixed定位的view结束 -->
+  <view class="shopping-bottom">
+  </view>
+</view>

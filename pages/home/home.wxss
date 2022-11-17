@@ -1,0 +1,90 @@
+/* pages/home/home.wxss */
+.home-top {
+  position: relative;
+}
+.home-swiper image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.home-swiper-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  background-color: rgba(0, 0, 0, .3);
+  width: 100%;
+  text-align: center;
+  font-size: 28rpx;
+}
+.home-swiper-count {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: #fff;
+  font-size: 29rpx;
+}
+
+.home-middle {
+  display: flex;
+  justify-content: space-around;
+  margin: 30rpx 0;
+}
+.home-middle image {
+  width: 300rpx;
+  height: 200rpx;
+}
+.home-middle-l,
+.home-middle-r {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home-middle-l text,
+.home-middle-r text {
+  font-size: 28rpx;
+  color:rgba(0, 0, 0, .6);
+  margin-top: 10rpx;
+}
+
+.home-list {
+  padding: 0 20rpx;
+}
+.home-list-item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 20rpx;
+  padding-bottom: 10rpx;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+.home-list-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 30rpx;
+  margin-bottom: 10rpx;
+}
+.home-list-item-bottom {
+  display: flex;
+  justify-content: center;
+}
+.home-list-image image {
+  width: 200rpx;
+  height: 150rpx;
+}
+.home-list-desc {
+  font-size: 24rpx;
+  color:rgba(0, 0, 0, .6);
+  margin-left: 10rpx;
+}
+.home-list-read-num {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 26rpx;
+}
+.home-list-read-num text {
+  color: red;
+}

@@ -1,0 +1,22 @@
+<!--pages/shop-detail/shop-detail.wxml-->
+<view class="detail">
+  <view class="detail-content">
+    <view>
+      <image src="{{ shopDetail.pic }}" mode="" />
+    </view>
+    <text>{{ shopDetail.name }}</text>
+    <text>{{ shopDetail.comment ? shopDetail.comment : "暂无评论" }}</text>
+    <text>{{ shopDetail.details }}</text>
+    <view class="detail-content-zw"></view>
+  </view>
+
+  <view class="detail-bottom">
+    <view>
+      收藏
+    </view>
+    <view class="detail-bottom-operation">
+      <button class="detail-bottom-operation-l">加入购物车</button>
+      <button class="detail-bottom-operation-r">购买</button>
+    </view>
+  </view>
+</view>

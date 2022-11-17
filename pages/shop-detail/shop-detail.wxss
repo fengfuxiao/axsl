@@ -1,0 +1,46 @@
+/* pages/shop-detail/shop-detail.wxss */
+.detail-content {
+  margin-bottom: 200rpx;
+}
+.detail-content-zw {
+  height: 140rpx;
+}
+.detail-bottom {
+  background-color: #fff;
+  position: fixed;
+  /* z-index: 999; */
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100rpx;
+  border-top: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.detail-bottom-operation {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-right: 20rpx;
+}
+.detail .detail-bottom-operation button {
+  width: 220rpx;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+}
+.detail-bottom-operation-l {
+  border-radius: 40rpx 0 0 40rpx;
+  border-right: 1px solid #ccc;
+  background-color: #ffa801;
+  color: #fff;
+}
+.detail-bottom-operation-r {
+  border-radius: 0 40rpx 40rpx 0;
+  background-color: #ff5e09;
+  color: #fff;
+}

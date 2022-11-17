@@ -1,0 +1,13 @@
+/* pages/select-city/select-city.wxss */
+.city {
+  padding: 20rpx;
+}
+.city-current-btn button {
+  color: green;
+}
+.city .city-current-btn button,
+.city .city-hot-btn button {
+  font-size: 30rpx;
+  font-weight: 400;
+  margin-left: 20rpx;
+}

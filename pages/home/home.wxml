@@ -1,0 +1,43 @@
+<!--pages/home/home.wxml-->
+<view class="home">
+  <!-- 首页轮播图开始 -->
+  <view class="home-top">
+    <swiper class="home-swiper" bindchange="changeSwiperItem" data-info="{{ current }}" autoplay circular>
+      <swiper-item wx:for="{{ swiperImages }}" wx:key="index">
+        <image src="{{ item.image }}" alt="" />
+        <view class="home-swiper-title">{{ item.title }}</view>
+      </swiper-item>
+    </swiper>
+    <text class="home-swiper-count">{{ swiperItemCount }}</text>
+  </view>
+  <!-- 首页轮播图结束 -->
+  <!-- 首页每日一测开始 -->
+  <view class="home-middle">
+    <view class="home-middle-l">
+      <image src="/images/info_left.jpg" alt="" />
+      <text>每日食谱</text>
+    </view>
+    <view class="home-middle-r">
+      <image src="/images/info_right.jpg" mode="" />
+      <text>每日一测</text>
+    </view>
+  </view>
+  <!-- 首页每日一测结束 -->
+  <!-- 首页信息列表开始 -->
+  <view class="home-list">
+    <view class="home-list-item" bindtap="onClickToDesc" data-itemid="{{ item.id }}" wx:for="{{ homeList }}" wx:key="index">
+      <view class="home-list-title">{{ item.title }}</view>
+      <view class="home-list-item-bottom">
+        <view class="home-list-image">
+          <image src="{{ item.image }}" mode="" />
+        </view>
+        <view class="home-list-desc">{{ item.desc }}</view>
+        <view class="home-list-read-num">
+          <text>{{ item.readNum }}</text>
+          次阅读
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 首页信息列表结束 -->
+</view>

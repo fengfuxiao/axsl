@@ -1,0 +1,54 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/diet/diet",
+    "pages/shopping/shopping",
+    "pages/my/my",
+    "pages/homelist/homelist",
+    "pages/product/product",
+    "pages/select-city/select-city",
+    "pages/search/search",
+    "pages/shop-detail/shop-detail"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#43bf92",
+    "navigationBarTitleText": "安心食疗",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "/images/tab1.png",
+        "selectedIconPath": "/images/tab5.png"
+      },
+      {
+        "pagePath": "pages/diet/diet",
+        "text": "食疗坊",
+        "iconPath": "/images/tab2.png",
+        "selectedIconPath": "/images/tab6.png"
+      },
+      {
+        "pagePath": "pages/shopping/shopping",
+        "text": "购物车",
+        "iconPath": "/images/tab9.png",
+        "selectedIconPath": "/images/tab10.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "/images/tab4.png",
+        "selectedIconPath": "/images/tab8.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

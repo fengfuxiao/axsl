@@ -1,0 +1,18 @@
+<!--pages/product/product.wxml-->
+<view class="product">
+  <view class="diet-shop">
+    <view class="diet-shop-item" wx:for="{{ shopList }}" wx:key="index">
+      <view class="diet-shop-item-img">
+        <image src="{{ item.image }}" mode="aspectFit" />
+      </view>
+      <view class="diet-shop-item-right">
+        <text>{{ item.name }}</text>
+        <text>{{ item.desc }}</text>
+        <view class="diet-shop-item-right-bottom">
+          <text>¥{{ item.price }}</text>
+          <text>{{ item.paymentNum }}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
